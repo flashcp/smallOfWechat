@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00bcd4",
+    "navigationBarTitleText": "双人五子棋",
+    "navigationBarTextStyle": "black"
+  }
+}

@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<!-- <text>es6下原生JS五子棋</text> -->
+<view id="infro">{{reminder}}</view>
+<view id="root">
+<!-- <view class="root"></view> -->
+  <view class="point p{{index}}" wx:for="{{array}}">
+       <view class="circle {{array[index].state==1?'white':''}} {{array[index].state==2?'black':''}}" bindtap="{{fall_function}}" data-key='{{index}}'></view>   
+  </view>
+</view>
+<button class='start' loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="restart" hover-class="other-button-hover"> 重新开始 </button>
+<view class='game-over' hidden='{{!over}}'>
+    <text>{{game_over}}</text>
+</view> 
